@@ -98,8 +98,7 @@ button:hover {
 /* Requête média pour les écrans inférieurs à 1200px */
 @media (max-width: 1280px) {
   .product-card {
-    width: 90vw; /* Ajustez cette valeur en fonction de vos besoins */
-    height: auto;
+    width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
   }
 
   .product-image {
@@ -114,7 +113,7 @@ button:hover {
 @media (min-width: 1280px) and (max-width: 1920px) {
   .product-card {
     width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
-    height: 50vh;
+    height: 40vh;
   }
 
   .product-image {
