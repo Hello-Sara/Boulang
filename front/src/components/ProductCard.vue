@@ -31,10 +31,8 @@ const props = defineProps({
     border: 1px solid #ccc;
     padding: 16px;
     flex: 1;
-    max-height: 45vh; 
-    min-height: 45vh;
-    max-width: 17vw;
-    min-width: 17vw;
+    height: 45vh;
+    width: 17vw;
     background-color: transparent;
     border-radius: 15px;
     border: 2px solid #292923;
@@ -93,6 +91,38 @@ button:hover {
 @media (max-width: 600px) {
   .product-card {
     max-height: none;
+  }
+}
+
+
+/* Requête média pour les écrans inférieurs à 1200px */
+@media (max-width: 1280px) {
+  .product-card {
+    width: 90vw; /* Ajustez cette valeur en fonction de vos besoins */
+    height: auto;
+  }
+
+  .product-image {
+    height: 150px; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+
+  .product-name {
+    font-size: 1.2em; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  .product-card {
+    width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
+    height: 50vh;
+  }
+
+  .product-image {
+    height: 150px; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+
+  .product-name {
+    font-size: 1.2em; /* Ajustez cette valeur en fonction de vos besoins */
   }
 }
 </style>
