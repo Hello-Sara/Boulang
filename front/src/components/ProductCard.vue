@@ -31,7 +31,7 @@ const props = defineProps({
     border: 1px solid #ccc;
     padding: 16px;
     flex: 1;
-    height: 45vh;
+    height: 60vh;
     width: 17vw;
     background-color: transparent;
     border-radius: 15px;
@@ -99,6 +99,7 @@ button:hover {
 @media (max-width: 1280px) {
   .product-card {
     width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
+    height:auto;
   }
 
   .product-image {
@@ -113,7 +114,6 @@ button:hover {
 @media (min-width: 1280px) and (max-width: 1920px) {
   .product-card {
     width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
-    height: 40vh;
   }
 
   .product-image {
@@ -129,7 +129,6 @@ button:hover {
     /* Votre style pour les écrans 1920x1080 avec zoom 125% */
     .product-card {
     width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
-    height: 80vh;
   }
 
   .product-image {
