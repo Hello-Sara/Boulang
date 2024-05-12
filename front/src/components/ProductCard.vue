@@ -31,11 +31,10 @@ const props = defineProps({
     border: 1px solid #ccc;
     padding: 16px;
     flex: 1;
-    max-height: 450px; 
-    min-height: 450px;
-    max-width: 300px;
-    min-width: 300px;
-    overflow: auto;
+    max-height: 45vh; 
+    min-height: 45vh;
+    max-width: 17vw;
+    min-width: 17vw;
     background-color: transparent;
     border-radius: 15px;
     border: 2px solid #292923;
