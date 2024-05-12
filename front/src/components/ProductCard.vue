@@ -7,7 +7,9 @@
             <p class="product-price"> prix :{{ product.price }} €</p>
             <p class="product-quantity">stock : {{ product.quantity }}</p>
         </div>
-        <button>Details du produit</button>
+        <div class="actions">
+            <button>Details du produit</button>
+        </div>        
     </div>
 </template>
 
@@ -31,7 +33,7 @@ const props = defineProps({
     border: 1px solid #ccc;
     padding: 16px;
     flex: 1;
-    height: 60vh;
+    height: 450px;
     width: 17vw;
     background-color: transparent;
     border-radius: 15px;
@@ -69,6 +71,13 @@ const props = defineProps({
     margin: 0.5em 0;
 }
 
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 button {
     background-color: #615c5c;
     color: white;
@@ -81,7 +90,6 @@ button {
     margin-top: 10px;
     border-radius: 35px;
     width: 70%;
-    margin: auto;
 }
 
 button:hover {
