@@ -140,7 +140,7 @@
   top: 30vh;
   z-index: 9999;
   animation: moveCar 2s ease-out forwards;
-  width: 60vw;
+  width: 45vw;
 }
 
 .sub-hero {
@@ -149,5 +149,9 @@
   display: flex;
   justify-content: start;
   padding: 5vw;
+}
+
+.sub-hero-content {
+  width: 35vw;
 }
 </style>
