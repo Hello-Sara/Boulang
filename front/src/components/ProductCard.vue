@@ -124,4 +124,24 @@ button:hover {
     font-size: 1.2em; /* Ajustez cette valeur en fonction de vos besoins */
   }
 }
+
+@media only screen and (min-width: 1536px) and (max-width: 1920px) and (min-height: 864px) and (max-height: 1080px) and (-webkit-device-pixel-ratio: 1.25) {
+    /* Votre style pour les écrans 1920x1080 avec zoom 125% */
+    .product-card {
+    width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
+    height: 80vh;
+  }
+
+  .product-image {
+    height: 150px; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+
+  .product-name {
+    font-size: 1.2em; /* Ajustez cette valeur en fonction de vos besoins */
+  }
+  button {
+    width: auto;
+  }
+}
+
 </style>
