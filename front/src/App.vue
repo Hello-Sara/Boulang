@@ -20,6 +20,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 @import url('./assets/base.css');
 
+body {
+  margin: 0px;
+}
+
 @font-face {
   font-family: 'BAUHS93';
   src: url('./assets/fonts/BAUHS93.ttf') format('truetype');
@@ -29,7 +33,10 @@ header {
   line-height: 1.5;
   z-index: 1000;
   background-color: #fff;
-  padding: 20px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   border-bottom: 2px solid black;
 }
 
@@ -38,6 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 nav {
@@ -58,7 +66,7 @@ nav {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin-right: 10vw;
 }
 
 nav a.router-link-exact-active {

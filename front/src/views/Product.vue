@@ -35,16 +35,16 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+  min-height: 100vh;
 }
 .product-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
 }
 
 .product-grid > div {
-  flex: 1 0 20%; /* 100% / 5 = 20% */
   margin: 0.5rem;
   box-sizing: border-box;
 }
