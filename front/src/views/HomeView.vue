@@ -7,11 +7,12 @@
       <div class="hero">
         <div class="sub-hero">
           <div class="sub-hero-content">
-            <h1>La Boulang'</h1>
+            <h1>LA BOULANG'</h1>
             <p>
-              Vous recherchez une boulangerie acceuillante, rapide et efficace ? 
+              Vous recherchez une boulangerie acceuillante, rapide et efficace ? <br>
               Découvrez La Boulang’ quand on a pas le temps pour la boulegerie !
             </p>
+            <button class="discover">Découvrir !</button>
           </div>
         </div>
         <svg width="1042" height="525" viewBox="0 0 1042 525" fill="none" xmlns="http://www.w3.org/2000/svg" class="car">
@@ -117,12 +118,49 @@
         </svg>
 
       </div>
-      
+      <div class="products-gallery">
+        <h2>Nos produits</h2>
+        <div class="gallery">
+          <div class="product pain">
+            <h3>Pains</h3>
+            <a href="">Learn more</a>
+          </div>
+
+          <div class="product patisserie">
+            <h3>Patisseries</h3>
+            <a href="">Learn more</a>
+          </div>
+
+          <div class="product vienoiserie">
+            <h3>Viennoiseries</h3>
+            <a href="">Learn more</a>
+          </div>
+
+          <div class="product sandwich">
+            <h3>Sandwichs</h3>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+        <div class="formules">
+          <h3>Nos formules</h3>
+          <button>Découvrez les dès maintenant !</button>
+        </div>
+      </div>
     </div>
   </main>
 </template>
 
 <style scoped>
+
+@font-face {
+  font-family: 'bahnschrift';
+  src: url('../assets/fonts/BAHNSCHRIFT.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'BAUHS93';
+  src: url('../assets/fonts/BAUHS93.ttf') format('truetype');
+}
 
 @keyframes moveCar {
   0% {
@@ -131,6 +169,11 @@
   100% {
     right: 0px;
   }
+}
+
+p {
+  font-size: 1.2em;
+  font-family: 'bahnschrift';
 }
 
 
@@ -153,5 +196,138 @@
 
 .sub-hero-content {
   width: 35vw;
+  color: #FFB26A;
 }
+
+.sub-hero-content h1 {
+  font-size: 5em;
+  font-family: 'BAUHS93';
+}
+
+.products-gallery {
+  padding: 5vw;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 48%; /* 50% - un peu d'espace pour éviter les problèmes de débordement */
+  box-sizing: border-box; /* pour inclure le padding et la bordure dans la largeur */
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding:40px;
+  border-radius: 15px;
+  border: 1px solid #191A23;
+  border-bottom: 4px solid #191A23;
+}
+
+.product h3 {
+  font-size: 1.5em;
+  font-family: 'BAUHS93';
+  margin-bottom: 45px;
+}
+
+.pain h3 {
+  background-color: #0049FF;
+  color: #FFFFFF;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.pain a {
+  text-decoration: none;
+  color: #191A23;
+}
+
+.vienoiserie a {
+  text-decoration: none;
+  color: white;
+}
+
+.patisserie a {
+  text-decoration: none;
+  color: white;
+}
+
+.sandwich a {
+  text-decoration: none;
+  color: #191A23;
+}
+
+.patisserie h3 {
+  background-color: #FFFFFF;
+  color: #191A23;
+  width: 130px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.vienoiserie h3 {
+  background-color: #FFFFFF;
+  color: #191A23;
+  width: 170px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.sandwich h3 {
+  background-color: #0049FF;
+  color: #FFFFFF;
+  width: 130px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.pain {
+  background-color: #F3F3F3;
+}
+
+.vienoiserie {
+  background-color: #191A23;
+  color: white;
+}
+
+.patisserie {
+  background-color: #0049FF;
+}
+
+.sandwich {
+  background-color: #F3F3F3;
+}
+
+.formules {
+  margin-top: 40px;
+  background-color: #F3F3F3;
+  padding: 40px;
+  border-radius: 15px;
+  height: 200px;
+}
+
+.discover {
+  margin-top: 50px;
+  background-color: #0049FF;
+  color: white;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+@media ( max-width: 1000px) {
+  .sub-hero {
+    min-height: 22vh;
+  } 
+  .car {
+    top: 20vh;
+  }
+}
+
 </style>
