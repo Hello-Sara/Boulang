@@ -122,23 +122,35 @@
         <h2>Nos produits</h2>
         <div class="gallery">
           <div class="product pain">
-            <h3>Pains</h3>
-            <a href="">Learn more</a>
+            <div class="content">
+              <h3>Pains</h3>
+              <a href="">Learn more</a>
+            </div>            
+            <img src="../assets/img/pain.png">
           </div>
 
           <div class="product patisserie">
+          <data value="content">
             <h3>Patisseries</h3>
             <a href="">Learn more</a>
+          </data>
+          <img src="../assets/img/cupcacke.png">
           </div>
 
           <div class="product vienoiserie">
-            <h3>Viennoiseries</h3>
-            <a href="">Learn more</a>
+            <div>
+              <h3>Viennoiseries</h3>
+              <a href="">Learn more</a>
+            </div>
+            <img src="../assets/img/croissant.png">
           </div>
 
           <div class="product sandwich">
-            <h3>Sandwichs</h3>
-            <a href="">Learn more</a>
+            <div>
+              <h3>Sandwichs</h3>
+              <a href="">Learn more</a>
+            </div>
+            <img src="../assets/img/sandwich.png">
           </div>
         </div>
         <div class="formules">
@@ -211,12 +223,13 @@ p {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
 }
 
 .product {
-  width: 48%; /* 50% - un peu d'espace pour éviter les problèmes de débordement */
-  box-sizing: border-box; /* pour inclure le padding et la bordure dans la largeur */
+  width: 600px;/* 50% - un peu d'espace pour éviter les problèmes de débordement */
+  box-sizing:border-box; /* pour inclure le padding et la bordure dans la largeur */
   height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -243,6 +256,31 @@ p {
 .pain a {
   text-decoration: none;
   color: #191A23;
+}
+
+.pain img {
+  width: 200px;
+  height: 150px;
+  position: relative;
+  top: -20px;
+}
+
+.patisserie img {
+  width: 140px;
+  height: 150px;
+  position: relative;
+  top: -20px;
+}
+
+.sandwich img {
+  width: 200px;
+}
+
+.vienoiserie img {
+  width: 160px;
+  height: 180px;
+  position: relative;
+  top: -20px;
 }
 
 .vienoiserie a {
@@ -286,19 +324,32 @@ p {
 
 .pain {
   background-color: #F3F3F3;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.pain .content {
+  margin: 0px;
 }
 
 .vienoiserie {
   background-color: #191A23;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .patisserie {
   background-color: #0049FF;
+  display: flex;
+  justify-content: space-between;
 }
 
 .sandwich {
   background-color: #F3F3F3;
+  display: flex;
+  justify-content: space-between;
 }
 
 .formules {
