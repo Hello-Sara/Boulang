@@ -16,7 +16,7 @@ import ProductCard from '../components/ProductCard.vue';
 const products = ref([]);
 
 onMounted(async () => {
-  const response = await fetch('http://localhost:3000/products');
+  const response = await fetch('https://boulang.onrender.com/products');
   products.value = await response.json();
 });
 </script>
