@@ -9,7 +9,8 @@ const API_KEY = process.env.API_KEY;
 // Middleware pour vérifier le token
 function verifyToken(req, res, next) {
   var token = req.headers['authorization'];
-
+  console.log(token);
+  console.log(API_KEY);
   if (!token || token.split(' ')[1] !== API_KEY) {
     return res.status(403).send({ auth: false, message: 'No token provided.' });
   }
