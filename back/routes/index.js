@@ -1,6 +1,5 @@
 var express = require('express');
 const ProductController = require('../controllers/ProductController');
-var jwt = require('jsonwebtoken');
 var router = express.Router();
 require('dotenv').config();
 
@@ -11,19 +10,11 @@ const API_KEY = process.env.API_KEY;
 function verifyToken(req, res, next) {
   var token = req.headers['authorization'];
 
-  if (!token) {
+  if (!token || token.split(' ')[1] !== API_KEY) {
     return res.status(403).send({ auth: false, message: 'No token provided.' });
   }
 
-  jwt.verify(token, 'YOUR_SECRET_KEY', function(err, decoded) {
-    if (err) {
-      return res.status(500).send({ auth: false, message: 'Failed to authenticate token.' });
-    }
-
-    // si tout est bon, sauvegarder à la demande pour une utilisation dans d'autres routes
-    req.userId = decoded.id;
-    next();
-  });
+  next();
 }
 
 /* GET home page. */
