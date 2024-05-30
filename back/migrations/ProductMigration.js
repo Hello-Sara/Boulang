@@ -10,15 +10,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       description: {
         type: Sequelize.TEXT,
-        allowNull: true
+        allowNull: false
       },
       image: {
         type: Sequelize.STRING,
-        allowNull: true
+        allowNull: false
       },
       price: {
         type: Sequelize.FLOAT,
@@ -27,6 +28,30 @@ module.exports = {
       quantity: {
         type: Sequelize.INTEGER,
         allowNull: false
+      },
+      energy: {
+        type: Sequelize.FLOAT
+      },
+      fat: {
+        type: Sequelize.FLOAT
+      },
+      saturatedFats: {
+        type: Sequelize.FLOAT
+      },
+      glucides: {
+        type: Sequelize.FLOAT
+      },
+      sugars: {
+        type: Sequelize.FLOAT
+      },
+      fibres: {
+        type: Sequelize.FLOAT
+      },
+      proteins: {
+        type: Sequelize.FLOAT
+      },
+      salt: {
+        type: Sequelize.FLOAT
       }
     });
   },

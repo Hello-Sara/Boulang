@@ -40,4 +40,25 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+const Product = require('./Product');
+const Allergenic = require('./Allergenic');
+const ProductAllergenic = require('./ProductAllergenic');
+const User = require('./User');
+const Cart = require('./Cart');
+const CartProduct = require('./CartProduct');
+const Reservation = require('./Reservation');
+
+// Définir les relations entre les modèles
+Product.belongsToMany(Allergenic, { through: ProductAllergenic });
+Allergenic.belongsToMany(Product, { through: ProductAllergenic });
+User.hasOne(Cart);
+Cart.belongsTo(User);
+Product.belongsToMany(Cart, { through: CartProduct });
+Cart.belongsToMany(Product, { through: CartProduct });
+Cart.hasOne(Reservation);
+Reservation.belongsTo(Cart);
+
+// Synchroniser les modèles avec la base de données
+sequelize.sync();
+
 module.exports = db;

@@ -4,6 +4,7 @@ var router = express.Router();
 require('dotenv').config();
 
 
+
 const API_KEY = process.env.API_KEY;
 
 // Middleware pour vérifier le token
