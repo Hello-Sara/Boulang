@@ -1,14 +1,11 @@
 <template>
     <div class="product-card">
-        <h2 class="product-name">{{ product.name }}</h2>
         <img :src="product.image" :alt="product.name" class="product-image" />
-        <div class="product-details">           
-            <p class="product-description">{{ product.description }}</p>
+        <div class="product-details">                     
+            <h2 class="product-name">{{ product.name }}</h2>
             <p class="product-price"> prix :{{ product.price }} €</p>
-            <p class="product-quantity">stock : {{ product.quantity }}</p>
         </div>
         <div class="actions">
-            <button>Details du produit</button>
         </div>        
     </div>
 </template>
@@ -30,19 +27,16 @@ const props = defineProps({
 .product-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #ccc;
     padding: 16px;
     flex: 1;
     height: 450px;
-    width: 17vw;
+    width: 35vw;
     background-color: transparent;
     border-radius: 15px;
-    border: 2px solid #292923;
 }
 
 .product-image {
     width: 100%;
-    height: 200px; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
     object-fit: cover;
     margin-bottom: 16px;
     border-radius: 10px;
@@ -53,9 +47,9 @@ const props = defineProps({
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'BAUHS93';
-    color: #2a4bfa;
+    color: #615c5c;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: start;
 }
 
 .product-description {
@@ -110,10 +104,6 @@ button:hover {
     height:auto;
   }
 
-  .product-image {
-    height: 150px; /* Ajustez cette valeur en fonction de vos besoins */
-  }
-
   .product-name {
     font-size: 1.2em; /* Ajustez cette valeur en fonction de vos besoins */
   }
@@ -124,9 +114,6 @@ button:hover {
     width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
   }
 
-  .product-image {
-    height: 150px; /* Ajustez cette valeur en fonction de vos besoins */
-  }
 
   .product-name {
     font-size: 1.2em; /* Ajustez cette valeur en fonction de vos besoins */
@@ -137,10 +124,6 @@ button:hover {
     /* Votre style pour les écrans 1920x1080 avec zoom 125% */
     .product-card {
     width: 17vw; /* Ajustez cette valeur en fonction de vos besoins */
-  }
-
-  .product-image {
-    height: 150px; /* Ajustez cette valeur en fonction de vos besoins */
   }
 
   .product-name {

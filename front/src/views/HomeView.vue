@@ -10,7 +10,7 @@
             <h1>LA BOULANG'</h1>
             <p>
               Vous recherchez une boulangerie acceuillante, rapide et efficace ? <br>
-              Découvrez La Boulang’ quand on a pas le temps pour la boulegerie !
+              Découvrez La Boulang’ quand on a pas le temps pour la boulangerie !
             </p>
             <button class="discover">Découvrir !</button>
           </div>
@@ -119,7 +119,7 @@
 
       </div>
       <div class="products-gallery">
-        <h2>Nos produits</h2>
+        <h2 class="our-products">Nos produits</h2>
         <div class="gallery">
           <div class="product pain">
             <div class="content">
@@ -153,9 +153,67 @@
             <img src="../assets/img/sandwich.png">
           </div>
         </div>
-        <div class="formules">
-          <h3>Nos formules</h3>
-          <button>Découvrez les dès maintenant !</button>
+        <div class="formules">          
+            <div>
+              <h3 class="our-formules">Nos formules</h3>
+            </div>
+            <img class="form-sand" src="../assets/img/sandwich.png">
+            <img  class="form-cup" src="../assets/img/cupcacke.png">
+            <a href="">Découvrez les dès maintenant !</a>
+        </div>
+        <div class="services">
+          <h3 class="our-services">Nos Services</h3>
+          <div class="services-container">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum ex totam, dolore expedita eveniet, vitae nemo quidem libero impedit nam pariatur corporis quisquam odio sequi illo nisi excepturi exercitationem!</div>
+            <span></span>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati asperiores sunt facilis, rem exercitationem laborum quas, minima explicabo magnam rerum quam architecto voluptatibus? Perferendis odit totam deserunt! Quae, nesciunt!</div>
+            <span></span>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus omnis id. Quasi vero suscipit, quia sapiente quod nulla, nihil officiis est voluptatibus sequi vitae harum, rem tempora doloribus alias.</div>
+          </div>
+        </div>
+        <div>
+          <h3 class="our-loc">Notre Localisation</h3>
+          <div class="loc-container">
+            <div class="loc-content">
+              <h3>La Première boulangerie drive sur Nice !</h3>
+              <a href="">Découvrez là dès maintenant !</a>
+            </div>
+            <div class="loc-map">
+              <img src="../assets/img/map.png" alt="map-nice">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex-title"><h3 class="our-contact">Nous contacter</h3><p>N'hésitez pas à nous faire des retours</p></div> 
+          <div class="form-container">
+            <form>
+            <div class="feedback-type">
+              <div>
+              <input type="radio" id="ticket" name="feedbackType">
+              <label for="ticket">Faire un ticket</label>
+            </div>
+            <div>
+              <input type="radio" id="return" name="feedbackType">
+              <label for="return">Faire un retour</label>
+            </div>
+            </div>
+            
+            <div>
+              <label for="name">Nom</label><br>
+              <input class="input-text" type="text" id="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label><br>
+              <input class="input-text" type="email" id="email" required>
+            </div>
+            <div>
+              <label for="message">Message</label><br>
+              <textarea id="message" required></textarea>
+            </div>
+            <a  href="#" class="our-contact">Envoyer mon message</a>
+          </form>
+          <img src="../assets/img/deco.png" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -333,6 +391,10 @@ p {
   margin: 0px;
 }
 
+.services{
+  margin-top: 100px;
+}
+
 .vienoiserie {
   background-color: #191A23;
   color: white;
@@ -358,7 +420,33 @@ p {
   padding: 40px;
   border-radius: 15px;
   height: 200px;
+  position: relative;
 }
+
+.formules a {
+  text-decoration: none;
+  background-color: #191A23;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.formules .form-sand {
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  top: 60px;
+  right: 150px;
+}
+
+.formules .form-cup {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 60px;
+  right: 120px;
+}
+
 
 .discover {
   margin-top: 50px;
@@ -370,6 +458,150 @@ p {
   border-radius: 15px;
   border: none;
   cursor: pointer;
+}
+
+.our-products {
+  background-color: #2a4bfa;
+  color: white;
+  width: 8vw;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Bauhs93';
+  border-radius: 5px;
+}
+
+.our-formules {
+  font-family: 'Bauhs93';
+  font-size: 2em;
+}
+
+.our-services {
+  background-color: #2a4bfa;
+  color: white;
+  width: 8vw;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Bauhs93';
+  border-radius: 5px;
+}
+
+.our-loc {
+  background-color: #2a4bfa;
+  color: white;
+  width: 10vw;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Bauhs93';
+  border-radius: 5px;
+  margin-top: 150px ;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #1f2027;
+  padding: 80px;
+  color: white;
+  border-radius: 15px;
+}
+
+.services-container span {
+  border-left: 1px solid white; /* Remplacez #000 par la couleur de votre choix */
+}
+
+.loc-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2a4bfa;
+  padding: 60px;
+  color: white;
+  border-radius: 15px;
+}
+
+.loc-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loc-map {
+  display: flex;
+  justify-content: end;
+}
+
+.loc-map img {
+  width: 90%;
+}
+
+.loc-container a {
+  text-decoration: none;
+  background-color: #191A23;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 15vw;
+}
+
+.flex-title {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  gap: 20px;
+}
+
+.our-contact {
+  background-color: #2a4bfa;
+  color: white;
+  width: 10vw;
+  text-align: center;
+  padding: 8px;
+  font-family: 'Bauhs93';
+  border-radius: 5px;
+}
+
+.form-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  padding: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+
+.form-container form div .input-text, textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #191A23;
+  width: 50%;
+}
+
+.feedback-type {
+  display: flex;
+  gap: 20px;
+}
+
+.form-container a {
+  text-decoration: none;
+  background-color: #191A23;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.form-container img {
+  width: 20vw;
+  position: relative;
+  right: -20%;
 }
 
 @media ( max-width: 1000px) {
