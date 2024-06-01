@@ -58,21 +58,14 @@ h1 {
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-  .product-card {
-    width: 70vw;
-  }  
 
+@media (max-width: 600px) {
   .about h1 {
     text-align: center;
   }
 }
 
-@media (max-width: 800px) {
-  .product-card {
-    width: 70vw;
-  }  
-
+@media (max-width: 900px) {
   .about h1 {
     text-align: center;
   }

@@ -134,4 +134,24 @@ button:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .product-card {
+    width: 70vw;
+  }  
+
+  .about h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-card {
+    width: 70vw;
+  }  
+
+  .about h1 {
+    text-align: center;
+  }
+}
+
 </style>
