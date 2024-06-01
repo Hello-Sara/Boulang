@@ -116,4 +116,12 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 </style>

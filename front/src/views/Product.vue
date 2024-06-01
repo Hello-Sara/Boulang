@@ -57,4 +57,14 @@ h1 {
   margin: 2rem;
   box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 70vw;
+  }  
+
+  .about h1 {
+    text-align: center;
+  }
+}
 </style>

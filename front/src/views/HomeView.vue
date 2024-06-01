@@ -613,4 +613,148 @@ p {
   }
 }
 
+@media (max-width: 1200px) {
+  .form-container form {
+    width: 90%;
+  }
+  .form-container form div .input-text, textarea {
+    width: 70%;
+  }
+  .form-container img {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container form {
+    width: 100%;
+  }
+  .form-container form div .input-text, textarea {
+    width: 60vw;
+  }
+  .form-container img {
+    display: none;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .services-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .services-container span {
+    border-left: none; /* Supprime la bordure gauche */
+    border-top: 1px solid white; /* Ajoute une bordure en haut */
+  }
+
+  .sub-hero-content {
+    width: 100%;
+  }
+
+  .our-contact {
+    width: 40vw;
+  }
+
+  .car {
+    top: 60vh;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .our-products {
+    width: 40vw;
+  }
+
+  .our-services {
+    width: 40vw;
+  }
+
+  .our-loc {
+    width: 40vw;
+  }
+
+  .feedback-type {
+    width: 70vw;
+  }
+
+  .formules .form-cup {
+    width: 60px;
+    height: 60px;
+    right: 20px;
+    top: 45px;
+  }
+
+  .formules .form-sand {
+    width: 70px;
+    height: 60px;
+    right: 40px;
+    top: 45px;
+  }
+
+  .flex-title {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vienoiserie img {
+    width: 130px;
+    height: 150px;
+  }
+
+  .sandwich img {
+    width: 170px;
+  }
+
+  .loc-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .loc-content {
+   flex-direction: column;
+  }
+
+  .loc-content a {
+    width: 50vw;
+  }
+
+  .loc-map img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container form div .input-text, textarea {
+    width: 100%;
+  }
+  .form-container img {
+    width: 50vw;
+  }
+
+  .form-container form div .input-text, textarea {
+    width: 60vw;
+  }
+
+  .form-cup {
+    width: 60px;
+  }
+
+  .form-sand {
+    width: 60px;
+  }
+}
+
 </style>
