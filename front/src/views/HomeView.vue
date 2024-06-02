@@ -12,7 +12,9 @@
               Vous recherchez une boulangerie acceuillante, rapide et efficace ? <br>
               Découvrez La Boulang’ quand on a pas le temps pour la boulangerie !
             </p>
-            <button class="discover">Découvrir !</button>
+            <router-link to="/products">
+              <button class="discover">Découvrir !</button>
+            </router-link>
           </div>
         </div>
         <svg width="1042" height="525" viewBox="0 0 1042 525" fill="none" xmlns="http://www.w3.org/2000/svg" class="car">

@@ -7,8 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <img alt="Vue logo" class="logo" src="@/assets/boulangerie.png" width="150" height="100" />
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/products">Products</RouterLink>
+        <RouterLink to="/">Accueil</RouterLink>
+        <RouterLink to="/products">Nos produits</RouterLink>
       </nav>
     </div>
   </header>
