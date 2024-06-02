@@ -123,38 +123,45 @@
       <div class="products-gallery">
         <h2 class="our-products">Nos produits</h2>
         <div class="gallery">
-          <div class="product pain">
-            <div class="content">
-              <h3>Pains</h3>
-              <a href="">Learn more</a>
-            </div>            
-            <img src="../assets/img/pain.png">
-          </div>
+          <router-link to="/products"  style="text-decoration: none; color: inherit;">
+            <div class="product pain">
+              <div class="content">
+                <h3>Pains</h3>
+              </div>            
+              <img src="../assets/img/pain.png">
+            </div>
+          </router-link>
 
+        <router-link to="/products"  style="text-decoration: none; color: inherit;">
           <div class="product patisserie">
           <data value="content">
             <h3>Patisseries</h3>
-            <a href="">Learn more</a>
           </data>
           <img src="../assets/img/cupcacke.png">
           </div>
+        </router-link>
+        
 
+        <router-link to="/products"  style="text-decoration: none; color: inherit;">
           <div class="product vienoiserie">
             <div>
               <h3>Viennoiseries</h3>
-              <a href="">Learn more</a>
             </div>
             <img src="../assets/img/croissant.png">
           </div>
+         </router-link>
 
+        <router-link to="/products"  style="text-decoration: none; color: inherit;">
           <div class="product sandwich">
             <div>
               <h3>Sandwichs</h3>
-              <a href="">Learn more</a>
             </div>
             <img src="../assets/img/sandwich.png">
           </div>
+        </router-link>
         </div>
+
+        <router-link to="/products"  style="text-decoration: none; color: inherit;">
         <div class="formules">          
             <div>
               <h3 class="our-formules">Nos formules</h3>
@@ -163,6 +170,7 @@
             <img  class="form-cup" src="../assets/img/cupcacke.png">
             <a href="">Découvrez les dès maintenant !</a>
         </div>
+        </router-link>
         <div class="services">
           <h3 class="our-services">Nos Services</h3>
           <div class="services-container">
@@ -178,7 +186,7 @@
           <div class="loc-container">
             <div class="loc-content">
               <h3>La Première boulangerie drive sur Nice !</h3>
-              <a href="">Découvrez là dès maintenant !</a>
+              <a href="https://www.google.fr/maps/@43.6873736,7.2367844,18.29z?entry=ttu" target="_blank">Découvrez là dès maintenant !</a>
             </div>
             <div class="loc-map">
               <img src="../assets/img/map.png" alt="map-nice">
@@ -297,12 +305,14 @@ p {
   border-radius: 15px;
   border: 1px solid #191A23;
   border-bottom: 4px solid #191A23;
+  text-decoration: none;
 }
 
 .product h3 {
   font-size: 1.5em;
   font-family: 'BAUHS93';
   margin-bottom: 45px;
+  text-decoration: none;
 }
 
 .pain h3 {
