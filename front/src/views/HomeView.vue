@@ -164,11 +164,11 @@
         <div class="services">
           <h3 class="our-services">Nos Services</h3>
           <div class="services-container">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum ex totam, dolore expedita eveniet, vitae nemo quidem libero impedit nam pariatur corporis quisquam odio sequi illo nisi excepturi exercitationem!</div>
+            <div>Notre service Click and Collect vous permet de commander vos produits La Boulang’ préférés en ligne et de les récupérer rapidement sans quitter votre voiture. Sélectionnez vos produits, choisissez votre créneau de récupération, et passez récupérer votre commande à notre drive. Cette solution pratique vous fait gagner du temps tout en vous assurant des produits frais et de qualité.</div>
             <span></span>
-            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati asperiores sunt facilis, rem exercitationem laborum quas, minima explicabo magnam rerum quam architecto voluptatibus? Perferendis odit totam deserunt! Quae, nesciunt!</div>
+            <div>Avec notre service drive, profitez de la commodité ultime. Passez votre commande directement depuis votre véhicule et récupérez-la en quelques minutes sans avoir à stationner. Que vous soyez pressé ou que vous souhaitiez simplement une option rapide et facile, notre service drive est conçu pour s’adapter à votre emploi du temps chargé.</div>
             <span></span>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus omnis id. Quasi vero suscipit, quia sapiente quod nulla, nihil officiis est voluptatibus sequi vitae harum, rem tempora doloribus alias.</div>
+            <div>Nous offrons également des commandes personnalisées pour toutes vos occasions spéciales. Que ce soit pour un anniversaire, une réunion d’affaires ou une célébration familiale, choisissez parmi une variété de pains, de viennoiseries et de pâtisseries, et personnalisez-les selon vos besoins. Contactez-nous à l’avance pour garantir la disponibilité et nous nous ferons un plaisir de répondre à vos demandes spécifiques.</div>
           </div>
         </div>
         <div>
